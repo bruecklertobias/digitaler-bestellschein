@@ -1,9 +1,7 @@
-"use client"
-
+import type { ReactNode } from "react"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { CartProvider } from "@/components/shopping-cart"
-import type React from "react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -12,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <html lang="de">
