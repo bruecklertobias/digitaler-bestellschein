@@ -1,6 +1,5 @@
 "use client"
 
-import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { CartProvider } from "@/components/shopping-cart"
@@ -9,11 +8,6 @@ import Link from "next/link"
 import Image from "next/image"
 
 const inter = Inter({ subsets: ["latin"] })
-
-export const metadata: Metadata = {
-  title: "Digitaler Bestellschein",
-  description: "Schulkleidung vorbestellen",
-}
 
 export default function RootLayout({
   children,
@@ -52,3 +46,10 @@ export default function RootLayout({
   )
 }
 
+
+
+import './globals.css'
+
+export const metadata = {
+      generator: 'v0.dev'
+    };
